@@ -10,17 +10,16 @@ public class FlashlightBehavior : MonoBehaviour
     void Start()
     {
         flLight = GetComponent<Light>();
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            flLight.enabled = !flLight.enabled;
-        }
+        // PC Testing
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    flLight.enabled = !flLight.enabled;
+        //}
 
         // Button Y
         if (Input.GetKeyDown(KeyCode.Joystick1Button3))
