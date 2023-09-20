@@ -16,11 +16,23 @@ public class Interactable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // The player can only interact with objects in layer 6
         if (other.GetComponent<PlayerManager>())
         {
-            Debug.Log("Can Interact");
-            canInteract = true; 
+            if(this.gameObject.layer == 6)
+            {
+                Debug.Log("Can Interact");
+                canInteract = true;
+            }
         }
+
+        // If other object is damageable
+        if (other.GetComponent<PlayerManager>() || other.gameObject.layer == 7)
+        {
+            Hit(other);
+        }
+
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -54,5 +66,10 @@ public class Interactable : MonoBehaviour
     public virtual void Interact()
     {
         Debug.Log("Interact Base");
+    }
+
+    public virtual void Hit(Collider other)
+    {
+        Debug.Log("Hit Base");
     }
 }

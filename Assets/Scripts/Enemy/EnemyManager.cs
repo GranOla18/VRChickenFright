@@ -2,27 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour, IDamage
+public class EnemyManager : MonoBehaviour, IDamage
 {
-    public static PlayerManager instance;
     [SerializeField] private int health;
     [SerializeField] private int damageReceived;
-
-    #region Singleton
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
-    #endregion
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -34,21 +17,17 @@ public class PlayerManager : MonoBehaviour, IDamage
     {
         
     }
-
     public void Damage()
     {
-        if(health > 0)
+        if (health > 0)
         {
             health -= damageReceived;
-            Debug.Log("Player Damaged");
+            Debug.Log("Enemy Damaged");
         }
         else
         {
-            //Game Over
-            Debug.Log("Player Morido");
+            //Win
+            Debug.Log("Enemy Morido");
         }
-
     }
 }
-
-
