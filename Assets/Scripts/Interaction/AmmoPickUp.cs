@@ -9,6 +9,7 @@ public class AmmoPickUp : Interactable
         base.Interact();
         Debug.Log("Ammo");
         Destroy(this.gameObject);
+        GameManager.instance.bullets += 10;
     }
 
     // Start is called before the first frame update
