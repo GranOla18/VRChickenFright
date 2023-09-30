@@ -14,36 +14,39 @@ public class GunShoot : MonoBehaviour
 
     }
 
-    //private void Update()
-    //{
-
-    //}
-
-    // Update is called once per frame
-    private void FixedUpdate()
+    private void Update()
     {
-
         rayo.origin = transform.position + offset;
         rayo.direction = transform.forward;
 
         Debug.DrawRay(rayo.origin, rayo.direction * 10, Color.blue);
 
-        if (Physics.Raycast(rayo, out choque))
+        if (Input.GetKeyDown(KeyCode.Joystick2Button15))
         {
-            Debug.Log(choque.collider.name);
-
-            if (choque.collider.gameObject.layer == 7)
+            if (Physics.Raycast(rayo, out choque))
             {
-                choque.collider.gameObject.GetComponent<IDamage>().Damage();
-            }
+                Debug.Log(choque.collider.name);
 
+                if (choque.collider.gameObject.layer == 7)
+                {
+                    choque.collider.gameObject.GetComponent<IDamage>().Damage();
+                }
+
+            }
         }
 
-
-
-        //if (choque.collider.gameObject.layer == 7)
+        //if (Input.GetKeyDown(KeyCode.E))
         //{
-        //    choque.collider.gameObject.GetComponent<IDamage>().Damage();
+        //    if (Physics.Raycast(rayo, out choque))
+        //    {
+        //        Debug.Log(choque.collider.name);
+
+        //        if (choque.collider.gameObject.layer == 7)
+        //        {
+        //            choque.collider.gameObject.GetComponent<IDamage>().Damage();
+        //        }
+
+        //    }
         //}
     }
 }
