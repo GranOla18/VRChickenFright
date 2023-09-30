@@ -37,7 +37,7 @@ public class PlayerManager : MonoBehaviour, IDamage
 
     public void Damage()
     {
-        if(health > 0)
+        if(health > 1)
         {
             health -= damageReceived;
             Debug.Log("Player Damaged");
@@ -45,6 +45,7 @@ public class PlayerManager : MonoBehaviour, IDamage
         else
         {
             //Game Over
+            health = 0;
             Debug.Log("Player Morido");
         }
 

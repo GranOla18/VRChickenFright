@@ -1,0 +1,10 @@
+Controles
+A - Input.GetKeyDown(KeyCode.Joystick2Button0)
+B - Input.GetKeyDown(KeyCode.Joystick2Button1)
+Gatillo Derecho - Input.GetKeyDown(KeyCode.Joystick2Button15)
+Gatillo Secundario Derecho- Input.GetKeyDown(KeyCode.Joystick2Button5)
+
+X - Input.GetKeyDown(KeyCode.Joystick1Button2)
+Y - Input.GetKeyDown(KeyCode.Joystick1Button3)
+Gatillo Derecho - Input.GetKeyDown(KeyCode.Joystick1Button14)
+Gatillo Secundario Derecho- Input.GetKeyDown(KeyCode.Joystick1Button4)

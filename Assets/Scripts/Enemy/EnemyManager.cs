@@ -19,15 +19,17 @@ public class EnemyManager : MonoBehaviour, IDamage
     }
     public void Damage()
     {
-        if (health > 0)
+        if (health > 1)
         {
             health -= damageReceived;
             Debug.Log("Enemy Damaged");
         }
-        else
+        else if(health <= 1)
         {
             //Win
+            health = 0;
             Debug.Log("Enemy Morido");
+            this.gameObject.SetActive(false);
         }
     }
 }
