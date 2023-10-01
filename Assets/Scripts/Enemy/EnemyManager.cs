@@ -6,10 +6,14 @@ public class EnemyManager : MonoBehaviour, IDamage
 {
     [SerializeField] private int health;
     [SerializeField] private int damageReceived;
+    [SerializeField] private Animator enemyAnimator;
+    [SerializeField] private EnemyAI enemyAI;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        enemyAnimator = GetComponent<Animator>();
+        enemyAI = GetComponent<EnemyAI>();
     }
 
     // Update is called once per frame
@@ -29,7 +33,11 @@ public class EnemyManager : MonoBehaviour, IDamage
             //Win
             health = 0;
             Debug.Log("Enemy Morido");
-            this.gameObject.SetActive(false);
+            enemyAI.enabled = false;
+            //this.gameObject.SetActive(false);
+            enemyAnimator.SetBool("Walk", false);
+            enemyAnimator.SetBool("Run", false);
+            enemyAnimator.SetBool("Turn Head", true);
         }
     }
 }
