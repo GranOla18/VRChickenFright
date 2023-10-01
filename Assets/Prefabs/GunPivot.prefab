@@ -413,7 +413,7 @@ Animator:
   m_GameObject: {fileID: 7600149291786228076}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9d63b84f580d7654c942b876a873080f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 03d1fe4e93c9d4445b3a611df2ee5713, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -464,7 +464,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2670616762926754887}
-  - component: {fileID: 9127441154228702703}
   - component: {fileID: 2967960322191903663}
   - component: {fileID: 6956553553015996482}
   - component: {fileID: 3531055704456138503}
@@ -491,19 +490,6 @@ Transform:
   - {fileID: 6585549608211940795}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9127441154228702703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8047962718923390639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4aabe94d277b80d41bafb7ceb53b8e87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offset: {x: 0, y: 0, z: 0}
 --- !u!65 &2967960322191903663
 BoxCollider:
   m_ObjectHideFlags: 0
