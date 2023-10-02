@@ -10,6 +10,11 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
+    }
+
     public void ExitGame()
     {
         Application.Quit();
