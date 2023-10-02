@@ -28,4 +28,9 @@ public class GameManager : MonoBehaviour
         bullets = 10;
     }
 
+    public void Shoot()
+    {
+        bullets--;
+    }
+
 }

@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class FlashlightBehavior : MonoBehaviour
 {
-    private Light flLight;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        flLight = GetComponent<Light>();
-    }
+    [SerializeField] private Light flLightOut;
+    [SerializeField] private Light flLightMid;
+    [SerializeField] private Light flLightInner;
 
     // Update is called once per frame
     void Update()
@@ -24,7 +20,9 @@ public class FlashlightBehavior : MonoBehaviour
         // Button Y
         if (Input.GetKeyDown(KeyCode.Joystick1Button3))
         {
-            flLight.enabled = !flLight.enabled;
+            flLightOut.enabled = !flLightOut.enabled;
+            flLightMid.enabled = !flLightMid.enabled;
+            flLightInner.enabled = !flLightInner.enabled;
         }
     }
 }
