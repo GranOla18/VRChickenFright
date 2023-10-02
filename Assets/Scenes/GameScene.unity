@@ -177,7 +177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &194729171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 2634394446043627466}
   winCanvas: {fileID: 2634394446043627465}
-  enemyAI: {fileID: 0}
+  enemyAI: {fileID: 1003297063}
   bullets: 0
 --- !u!1 &359869956
 GameObject:
@@ -1169,6 +1169,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1003297063 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6237296140747030660, guid: 8fb61568bc9102747842b327ddbb37fe, type: 3}
+  m_PrefabInstance: {fileID: 630952579}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003297052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d561ca93e74638345a3c9ae151bd593b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1014492014
 GameObject:
   m_ObjectHideFlags: 0
