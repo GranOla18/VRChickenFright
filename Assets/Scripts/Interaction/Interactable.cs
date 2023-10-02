@@ -46,7 +46,8 @@ public class Interactable : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+        //if (Input.GetKeyDown(KeyCode.Joystick2Button0))
+        if (Input.GetKeyDown(KeyCode.Joystick2Button0))
         {
             if (canInteract)
             {
@@ -54,13 +55,13 @@ public class Interactable : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (canInteract)
-            {
-                Interact();
-            }
-        }
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    if (canInteract)
+        //    {
+        //        Interact();
+        //    }
+        //}
     }
 
     public virtual void Interact()

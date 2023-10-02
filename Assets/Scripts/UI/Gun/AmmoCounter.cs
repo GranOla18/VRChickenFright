@@ -7,10 +7,9 @@ using UnityEngine.UI;
 public class AmmoCounter : MonoBehaviour
 {
     public TMP_Text text;
-    public GameManager gameManager;
 
     void Update()
     {
-        text.text = gameManager.bullets.ToString();
+        text.text = GameManager.instance.bullets.ToString();
     }
 }

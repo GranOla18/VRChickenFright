@@ -20,6 +20,7 @@ public class FlashlightBehavior : MonoBehaviour
         // Button Y
         if (Input.GetKeyDown(KeyCode.Joystick1Button3))
         {
+            SFXController.instance.ReproduceSFX(0);
             flLightOut.enabled = !flLightOut.enabled;
             flLightMid.enabled = !flLightMid.enabled;
             flLightInner.enabled = !flLightInner.enabled;

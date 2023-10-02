@@ -22,23 +22,11 @@ public class PlayerManager : MonoBehaviour, IDamage
     }
     #endregion
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Damage()
     {
         if(health > 1)
         {
+            SFXController.instance.ReproduceSFX(7);
             health -= damageReceived;
             Debug.Log("Player Damaged");
         }
@@ -47,6 +35,7 @@ public class PlayerManager : MonoBehaviour, IDamage
             //Game Over
             health = 0;
             Debug.Log("Player Morido");
+            GameManager.instance.GameOver();
         }
 
     }
