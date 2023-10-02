@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Canvas gameOverCanvas;
     [SerializeField] Canvas winCanvas;
     [SerializeField] EnemyAI enemyAI;
+    [SerializeField] GunShoot gunShoot;
 
     #region Singleton
     private void Awake()
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
         gameOverCanvas.enabled = true;
         enemyAI.GetComponent<Animator>().SetBool("Turn Head", true);
         enemyAI.enabled = false;
+        gunShoot.enabled = false;
     }
 
     public void Win()
