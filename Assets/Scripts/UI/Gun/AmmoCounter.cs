@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class AmmoCounter : MonoBehaviour
 {
-    public Text text;
+    public TMP_Text text;
     public GameManager gameManager;
 
     void Update()
