@@ -28,6 +28,8 @@ public class EnemyManager : MonoBehaviour, IDamage
     }
     public void Damage()
     {
+        audiosource.loop = false;
+
         if (health > 1)
         {
             //SFXController.instance.ReproduceSFX(6);

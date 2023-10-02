@@ -10994,6 +10994,7 @@ GameObject:
   - component: {fileID: 4398443591288780101}
   - component: {fileID: 8693505738899460513}
   - component: {fileID: 7920905377359018623}
+  - component: {fileID: 8225297196516341082}
   m_Layer: 8
   m_Name: Door
   m_TagString: Untagged
@@ -11126,7 +11127,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -1, z: 0}
   m_Axis: {x: 0, y: 90, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.3633547, y: 2.5307097, z: 1.850216}
+  m_ConnectedAnchor: {x: -13.145313, y: -2.763629, z: 10.631088}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -11153,6 +11154,19 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &8225297196516341082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120695153102612679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b52d6d79b1dfd2a4db16689baac2e2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPos: {fileID: 0}
 --- !u!1 &1129300107738630122
 GameObject:
   m_ObjectHideFlags: 0
@@ -46342,6 +46356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canInteract: 0
+  ammoAmount: 0
 --- !u!114 &5427530805350917617
 MonoBehaviour:
   m_ObjectHideFlags: 0

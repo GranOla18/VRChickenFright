@@ -33,4 +33,9 @@ public class GrabObject : MonoBehaviour
     {
         gunShoot.enabled = false;
     }
+
+    public void GrabKey()
+    {
+        SFXController.instance.ReproduceSFX(4);
+    }
 }

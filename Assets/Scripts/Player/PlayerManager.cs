@@ -7,6 +7,7 @@ public class PlayerManager : MonoBehaviour, IDamage
     public static PlayerManager instance;
     [SerializeField] private int health;
     [SerializeField] private int damageReceived;
+    [SerializeField] private CharacterController characterController;
 
     #region Singleton
     private void Awake()
@@ -21,6 +22,11 @@ public class PlayerManager : MonoBehaviour, IDamage
         }
     }
     #endregion
+
+    private void Update()
+    {
+        //if(characterController.spe)
+    }
 
     public void Damage()
     {

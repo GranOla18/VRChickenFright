@@ -23,6 +23,7 @@ public class LockManager : MonoBehaviour
         GameObject objNameCol = objName.transform.gameObject;
         if (objNameCol.tag == "Key" )
         {
+            SFXController.instance.ReproduceSFX(5);
             Destroy(barrier);
             Destroy(objNameCol);
 
