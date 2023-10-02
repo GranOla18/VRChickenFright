@@ -369,8 +369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc40c5628490ece41b86bd03b0a89eda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 0}
-  winCanvas: {fileID: 0}
+  gameOverCanvas: {fileID: 2634394446043627466}
+  winCanvas: {fileID: 2634394446043627465}
   bullets: 0
 --- !u!1 &359869956
 GameObject:
@@ -545,8 +545,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 9014170783809206335, guid: 11b93a0b2df6e3343b5834d4609d1233, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2634394446043627464}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9014170783705847997, guid: 11b93a0b2df6e3343b5834d4609d1233, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 452463682}
   m_SourcePrefab: {fileID: 100100000, guid: 11b93a0b2df6e3343b5834d4609d1233, type: 3}
 --- !u!114 &452463680 stripped
 MonoBehaviour:
@@ -559,6 +565,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &452463681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9014170783705847997, guid: 11b93a0b2df6e3343b5834d4609d1233, type: 3}
+  m_PrefabInstance: {fileID: 452463679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &452463682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452463681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5816260a834365e4dae39687282e4e82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {x: 0, y: 0, z: 0}
 --- !u!114 &551352812 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3531055704456138503, guid: 762299af432211c4aa9e1ad870f30844, type: 3}
@@ -2914,6 +2938,94 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2987710034354099866, guid: 310be905137cc6a409e6ef34435f6888, type: 3}
   m_PrefabInstance: {fileID: 2872034071538509125}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2634394446043627463
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1659668642}
+    m_Modifications:
+    - target: {fileID: 2779107231159900512, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580277147111536337, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_Name
+      value: LoserCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579152781566471549, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_Name
+      value: BackToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969019103148542504, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557152082495337245, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557152082495337245, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557152082495337245, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.415
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557152082495337245, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557152082495337245, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557152082495337245, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557152082495337245, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557152082495337245, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557152082495337245, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7557152082495337245, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336023693883287065, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+      propertyPath: m_Name
+      value: GameOver_UI
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+--- !u!4 &2634394446043627464 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7557152082495337245, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+  m_PrefabInstance: {fileID: 2634394446043627463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &2634394446043627465 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2779107231159900512, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+  m_PrefabInstance: {fileID: 2634394446043627463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &2634394446043627466 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6969019103148542504, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+  m_PrefabInstance: {fileID: 2634394446043627463}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2872034071538509125
 PrefabInstance:

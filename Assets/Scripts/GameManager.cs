@@ -40,14 +40,13 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        SceneManager.LoadScene(0);
-        //gameOverCanvas.enabled = true;
+        //SceneManager.LoadScene(0);
+        gameOverCanvas.enabled = true;
     }
 
     public void Win()
     {
-        SceneManager.LoadScene(0);
-
-        //winCanvas.enabled = true;
+        //SceneManager.LoadScene(0);
+        winCanvas.enabled = true;
     }
 }
