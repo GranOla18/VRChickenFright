@@ -372,6 +372,7 @@ MonoBehaviour:
   gameOverCanvas: {fileID: 2634394446043627466}
   winCanvas: {fileID: 2634394446043627465}
   enemyAI: {fileID: 1003297063}
+  gunShoot: {fileID: 1060041277}
   bullets: 0
 --- !u!1 &359869956
 GameObject:
