@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - LockedDoor
+  - Key
   layers:
   - Default
   - TransparentFX
