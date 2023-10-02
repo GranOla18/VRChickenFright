@@ -3019,7 +3019,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!223 &2634394446043627465 stripped
 Canvas:
-  m_CorrespondingSourceObject: {fileID: 2779107231159900512, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9118219368575910787, guid: 9b984035745f3df4e828b70963cbc43f, type: 3}
   m_PrefabInstance: {fileID: 2634394446043627463}
   m_PrefabAsset: {fileID: 0}
 --- !u!223 &2634394446043627466 stripped
