@@ -259,8 +259,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7399436986649211296}
-  - component: {fileID: 8290874142487171307}
-  - component: {fileID: 7253626123842775992}
+  - component: {fileID: 4094613754786594038}
+  - component: {fileID: 6027125606489339317}
   m_Layer: 0
   m_Name: Barrel_Location
   m_TagString: Untagged
@@ -283,7 +283,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6585549608211940795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!120 &8290874142487171307
+--- !u!120 &4094613754786594038
 LineRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
@@ -387,7 +387,7 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!114 &7253626123842775992
+--- !u!114 &6027125606489339317
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

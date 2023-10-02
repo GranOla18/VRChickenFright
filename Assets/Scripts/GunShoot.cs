@@ -27,8 +27,9 @@ public class GunShoot : MonoBehaviour
 
         Debug.DrawRay(rayo.origin, rayo.direction * 10, Color.blue);
 
-        if (Input.GetKeyDown(KeyCode.Joystick2Button15))
+        if (Input.GetKeyDown(KeyCode.E) && GameManager.instance.bullets > 0)
         {
+            GameManager.instance.Shoot();
             if (Physics.Raycast(rayo, out choque))
             {
                 Debug.Log(choque.collider.name);
