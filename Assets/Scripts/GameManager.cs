@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     [SerializeField] Canvas gameOverCanvas;
     [SerializeField] Canvas winCanvas;
+    [SerializeField] EnemyAI enemyAI;
 
     #region Singleton
     private void Awake()
@@ -42,6 +43,8 @@ public class GameManager : MonoBehaviour
     {
         //SceneManager.LoadScene(0);
         gameOverCanvas.enabled = true;
+        enemyAI.GetComponent<Animator>().SetBool("Turn Head", true);
+        enemyAI.enabled = false;
     }
 
     public void Win()

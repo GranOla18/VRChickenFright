@@ -50,6 +50,7 @@ public class EnemyManager : MonoBehaviour, IDamage
             enemyAnimator.SetBool("Walk", false);
             enemyAnimator.SetBool("Run", false);
             enemyAnimator.SetBool("Turn Head", true);
+            GameManager.instance.Win();
         }
     }
 }
