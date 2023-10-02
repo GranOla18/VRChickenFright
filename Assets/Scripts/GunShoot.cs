@@ -15,6 +15,8 @@ public class GunShoot : MonoBehaviour
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
+        lineRenderer.startWidth = 0f;
+        lineRenderer.endWidth = 0f;
     }
 
     private void Update()
@@ -46,7 +48,7 @@ public class GunShoot : MonoBehaviour
             lineRenderer.endWidth = 0.05f;
         }
 
-        else if (Input.GetKeyDown(KeyCode.Joystick2Button5))
+        else if (Input.GetKeyUp(KeyCode.Joystick2Button5))
         {
             lineRenderer.startWidth = 0f;
             lineRenderer.endWidth = 0f;
